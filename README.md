@@ -24,6 +24,6 @@ Proyek ini adalah ujian akhir untuk kursus yang disediakan oleh Dicoding.
 1. Masuk ke direktori yang terdapat file streamlit.
 
     ```shell
-    cd Project-data-analytics/streamlit/
-    streamlit run main.py
+    cd Analisis-Data-Dicoding/dashboard/
+    streamlit run dashboard.py
     ```
