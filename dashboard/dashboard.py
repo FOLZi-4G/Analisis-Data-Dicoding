@@ -6,7 +6,7 @@ import datetime
 import numpy as np
 import aqi
 
-sns.set(style="dark")
+sns.set_theme(style="white")
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 
@@ -14,5 +14,13 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 st.title("Polusi di distrik Beijing")
 
 # Dataset
-data = pd.read_excel('dataset/combined_data/PRSA_Data_combine.csv')
-return data
+df_airquality = pd.read_csv("https://raw.githubusercontent.com/FOLZi-4G/Analisis-Data-Dicoding/main/dataset/combined_data/PRSA_Data_combine.csv")
+
+# Nambah Kolom tanggal.
+date_columns = ['year', 'month', 'day', 'hour']
+df_airquality["date"] = pd.to_datetime(df_airquality[date_columns])
+df_airquality.insert(0, 'date', df_airquality.pop('date'))
+# Seakrang data tanggal sudah dibuat maka 4 kolom tanggal bisa dihapuskan
+df_airquality.drop(date_columns, axis=1, inplace=True)
+
+df_airquality.info()
