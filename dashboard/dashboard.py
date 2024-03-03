@@ -14,7 +14,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 st.title("Polusi di distrik Beijing")
 
 # Dataset
-df_airquality = pd.read_csv("https://raw.githubusercontent.com/FOLZi-4G/Analisis-Data-Dicoding/main/dataset/combined_data/PRSA_Data_combine.csv")
+df_airquality = pd.read_csv("https://raw.githubusercontent.com/FOLZi-4G/Analisis-Data-Dicoding/main/dashboard/main_data.csv")
 
 # Nambah Kolom tanggal.
 date_columns = ['year', 'month', 'day', 'hour']
