@@ -9,7 +9,7 @@ Proyek ini adalah ujian akhir untuk kursus yang disediakan oleh Dicoding.
 - **/dataset**: Direktori ini berisi data yang digunakan dalam proyek, dalam format .csv .
     - **/raw_data**: Sub direktori ini adalah tempat dimana data yang original masih disimpan
     - **/combined_data** Sub direktori ini adalah tempat dimana data dari seluruh csv yang terpisah digabungkan menjadi satu file .csv
-- **/streamlit**: Direktori ini berisi main.py yang digunakan untuk membuat dashboard hasil analisis data.
+- **/dashboard**: Direktori ini berisi main.py yang digunakan untuk membuat dashboard hasil analisis data.
 - **Project Notebook.ipynb**: File ini yang digunakan untuk melakukan analisis data.
 
 ## Instalasi
